@@ -1,0 +1,132 @@
+@font-face {
+  font-family:Museo Sans;
+  src: url(MuseoSans.otf);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Museo Sans", "Segoe UI"; 
+  }
+  
+  body {
+    color: #253241;
+    background-color: #f7f7f7;
+    font-family: "Museo Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    
+     }
+
+    .roll-section{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .winner-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+  
+  .roll {
+    cursor: pointer;
+    appearance: none;
+    color: white;
+    background-color: #1f2b37;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: "Museo Sans",  "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    border: 5px solid #fff;
+    padding: .5em 2em;
+    border-radius: 3em;
+    transition: 200ms ease-in-out; }
+    .roll:hover {
+      background-color: #fff;
+      color: #253241;
+      border: 1px solid #253241 }
+  
+  .names {
+    font-size: 2.5rem; }
+  
+  .winner {
+    font-size: 4rem;
+    text-align: center; }
+    .winner span {
+      font-size: .35em;
+      font-weight: 500; }
+  
+  .roll-again {
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+    font-family: "Museo Sans",  "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    padding: 0;
+    margin-top: 2em;
+    color: #253241;;
+    border: none;
+    opacity: .5;
+    transition: 200ms ease-in-out; }
+    .roll-again:hover {
+      opacity: 1; }
+  
+  .hide {
+    display: none; }
+
+    body {
+        --c1: #fbda61;
+        --c2: #ff5acd;
+        display: grid;
+        place-items: center;
+        place-content: center;
+        gap: 2rem;
+        font-family: "Roboto Flex", sans-serif;
+      }
+      
+        
+      .celebrate {
+        color: transparent;
+        background-clip: text;
+        background-color: #4158d0;
+        background-image: linear-gradient(45deg, var(--c2), var(--c1), var(--c2));
+        background-size: 200% auto;
+        filter: drop-shadow(white 1px 1px 0) drop-shadow(#fbda61 2px 2px 2px);
+        animation: bg 4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+      
+      @media (prefers-reduced-motion) {
+        .celebrate {
+          animation: unset;
+        }
+      }
+      
+      @keyframes bg {
+        100% {
+          background-position: 200% center;
+        }
+      }
+      
+
+      .winnersList{
+      color: #253241;
+      text-decoration: none;
+      text-transform: uppercase;      
+      font-family: "Museo Sans", "Segoe UI"; 
+      }
+
+      .winnersList:hover {
+        cursor: pointer;        
+        text-decoration: underline;
+      }
+
+    
+   
+  

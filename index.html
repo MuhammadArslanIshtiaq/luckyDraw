@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="./js/roll.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+
+<body>
+
+    <div class="roll-section">
+        <img src="./assets/logo.png" width="350px" alt="logo">
+        <h1 class="my-4 text-uppercase">Welcome to the Lucky Draw</h1>
+        <button class="roll my-4" onclick="rollClick()">Click to Draw</button>
+        <div class="names hide counter"></div>
+        <div class="winner hide"></div>
+        <button class="roll-again hide mb-4" onclick="rollClick()">Roll Again?</button>
+        <div class="mt-5">
+            <a href="#winners" class="winnersList">See list of winners</a>
+        </div>
+
+    </div>
+
+    <div class="winner-section">
+        <img src="./assets/logo.png" width="350px" alt="logo">
+        <h1 class="my-4 text-uppercase">Winners of the Lucky Draw so far</h1>
+        <table class="table" id="winners">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Refrence #</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Imad</td>
+                    <td>123123123</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Waleed</td>
+                    <td>123123124</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Toor</td>
+                    <td>123123125</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Arsi</td>
+                    <td>123123126</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
